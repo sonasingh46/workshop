@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-web-app
+  labels:
+    env: development
+    app: backend
+spec:
+  containers:
+  - name: node-app
+    image: sonasingh46/node-web-app:latest
+    ports:
+    - containerPort: 8080
